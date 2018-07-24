@@ -1,0 +1,21 @@
+{
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "convert-csv-to-json": "0.0.13",
+        "cors": "^2.8.4",
+        "express": "^4.15.4",
+        "morgan": "^1.9.0",
+        "nodemon": "^1.18.3"
+    },
+    "name": "bucket-3-server-3",
+    "version": "0.0.1",
+    "description": "Solution to serve data to clients",
+    "main": "app.js",
+    "devDependencies": {},
+    "scripts": {
+        "start": "node app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Mark Newcomb",
+    "license": "ISC"
+}
