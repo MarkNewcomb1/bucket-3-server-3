@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const csvToJson = require('convert-csv-to-json');
+const port = parseInt(process.env.PORT || 9000);
 app.use(cors());
 const students = csvToJson.fieldDelimiter(',').getJsonFromCsv('students.csv');
 
@@ -32,4 +33,4 @@ app.get("/:id", function (request, response) {
     }
 });
 
-app.listen(9000);
+app.listen(port);
